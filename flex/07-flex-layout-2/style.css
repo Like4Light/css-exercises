@@ -11,62 +11,71 @@ body {
   background: darkmagenta;
   color: white;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
 .footer {
+  display: flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
-
+  flex-grow: 2;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  padding: 10px;
+  gap: 30px;
+  padding: 50px;
   flex-wrap: wrap;
-
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start ;
 }
 .sidebar {
   display: flex;
-  width: 300px;
+  width: 350px;
   background: royalblue;
   flex-shrink:  0;
+  
   
 }
 
 .card {
   display: flex;
   border: 1px solid #eee;
-  flex-grow: 1;
-  flex-wrap: wrap;
+  /* flex: 1 0; */
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 200px;
+  gap: 30px;
+  width: 300px;
+  padding: 10px;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  
+  margin-left: 0px;
+  padding-left: 15px;
+
 } 
 
+li {
+  margin-bottom: 15px;
+}
 a {
   text-decoration-line: none;
   color: #ffffffff;
-  padding: 15px;
   font-size: 24px;
 }
